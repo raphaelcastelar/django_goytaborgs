@@ -16,7 +16,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+]
+
+
+
+urlpatterns = [
+    path('register_robot/', views.register_robot, name='register_robot'),
+    # Adicione mais URLs para cadastro de competidor e equipe
 ]
