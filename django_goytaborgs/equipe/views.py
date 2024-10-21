@@ -2,7 +2,7 @@ from django.shortcuts import render
 
 # Create your views here.
 from django.shortcuts import render, redirect
-from .models import Robot, Team
+from .models import Robot, Team, Competitor
 from .forms import RobotForm
 
 # View para cadastrar um robô
